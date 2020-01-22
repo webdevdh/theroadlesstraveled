@@ -1,0 +1,79 @@
+.remove-btn {
+    margin-right: 0.5rem;
+}
+
+.fade-enter {
+    opacity: 0.01;
+}
+
+.fade-enter-active {
+    opacity: 1;
+    transition: opacity 1000ms ease-in;
+}
+
+.fade-exit {
+    opacity: 1;
+}
+
+.fade-exit-active {
+    opacity: 0.01;
+    transition: opacity 1000ms ease-in;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.bg {
+    background-image: url(./images/london.jpg);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 200%;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.explore {
+    background-color: #FF8000;
+    height: 40px;
+    width: 150px;
+    border-style: none;
+    font-size: 20px;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 20px;
+}
+.explain {
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
+    padding-bottom: 0px;
+}
+.third {
+    height: 200px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+#browse, #explainid {
+    padding-top: 100px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
