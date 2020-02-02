@@ -50,6 +50,13 @@ class TodoModal extends Component {
     };
 
     onChange = e => {
+        if((e.target.name === 'city' || e.target.name === 'country')
+            && !isNaN(e.target.value.substr(-1, 1))
+            && e.target.value !== '') {
+            alert('This field cannot contain a number');
+            e.target.value = e.target.value.substr(0, e.target.value.length - 1);
+            return;
+        }
         this.setState({ [e.target.name]: e.target.value })
     };
 
