@@ -5,7 +5,7 @@ import { Container } from 'reactstrap';
 
 import { Provider } from 'react-redux';
 import store from './store';
-import { loadUser } from './actions/authActions';
+// import { loadUser } from './actions/authActions';
 import { Button } from 'reactstrap';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -13,7 +13,7 @@ import './App.css';
 
 class App extends Component {
   componentDidMount() {
-    store.dispatch(loadUser());
+//    store.dispatch(loadUser());
   }
 
   render() {
@@ -33,15 +33,15 @@ class App extends Component {
           </div>
           <div className='explain' id='explainid'>
             <div className='third'>
-              <h5 style={{ color: '#FF8000' }}>Browse</h5>
+              <h5 className='titleColor'>Browse</h5>
               Browse off the beaten path travel recommendations all over the world
             </div>
             <div className='third'>
-              <h5 style={{ color: '#FF8000' }}>Search</h5>
+              <h5 className='titleColor'>Search</h5>
               Search for unique recommendations in the city or country you want
             </div>
             <div className='third'>
-              <h5 style={{ color: '#FF8000' }}>Recommend</h5>
+              <h5 className='titleColor'>Recommend</h5>
               Add your own recommendation - sign up (for free) to do so
             </div>
           </div>
