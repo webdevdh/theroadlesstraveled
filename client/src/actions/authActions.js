@@ -2,16 +2,16 @@ import axios from 'axios';
 import { returnErrors } from './errorActions';
 
 import {
-    USER_LOADED,
-    USER_LOADING,
-    AUTH_ERROR,
+//    USER_LOADED,
+//    USER_LOADING,
+//    AUTH_ERROR,
     LOGIN_SUCCESS,
     LOGIN_FAIL,
     LOGOUT_SUCCESS,
     REGISTER_SUCCESS,
     REGISTER_FAIL
 } from './types';
-
+/*
 export const loadUser = () => (dispatch, getState) => {
     dispatch({ type: USER_LOADING });
 
@@ -27,7 +27,7 @@ export const loadUser = () => (dispatch, getState) => {
             });
         });
 };
-
+*/
 export const register = ({ name, email, password }) => dispatch => {
     const config = {
         headers: {
