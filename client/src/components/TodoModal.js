@@ -50,12 +50,23 @@ class TodoModal extends Component {
     };
 
     onChange = e => {
-        if((e.target.name === 'city' || e.target.name === 'country')
+        if((e.target.name === 'city')
             && !isNaN(e.target.value.substr(-1, 1))
             && e.target.value !== '') {
-            alert('This field cannot contain a number');
+            document.getElementById('city').placeholder = 'This field cannot contain numbers';
             e.target.value = e.target.value.substr(0, e.target.value.length - 1);
             return;
+        } else {
+            document.getElementById('city').placeholder = 'ex. London';
+        }
+        if((e.target.name === 'country')
+            && !isNaN(e.target.value.substr(-1, 1))
+            && e.target.value !== '') {
+            document.getElementById('country').placeholder = 'This field cannot contain numbers';
+            e.target.value = e.target.value.substr(0, e.target.value.length - 1);
+            return;
+        } else {
+            document.getElementById('country').placeholder = 'ex. United Kingdom';
         }
         this.setState({ [e.target.name]: e.target.value })
     };
