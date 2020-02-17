@@ -52,8 +52,6 @@ body, html {
     margin-top: 20px;
 }
 .explain {
-    height: 50vh;
-    width: 100%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -61,8 +59,6 @@ body, html {
     padding-bottom: 0px;
 }
 .third {
-    height: 200px;
-    width: 300px;
     display: flex;
     flex-direction: column;
     justify-content: center;

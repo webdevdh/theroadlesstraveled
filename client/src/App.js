@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import AppNavbar from './components/AppNavbar';
 import TodoList from './components/TodoList';
-import { Container } from 'reactstrap';
+import { Container, Row, Col } from 'reactstrap';
 
 import { Provider } from 'react-redux';
 import store from './store';
@@ -31,20 +31,22 @@ class App extends Component {
               </Button>
             </a>
           </div>
-          <div className='explain' id='explainid'>
-            <div className='third'>
+          <Container>
+          <Row className='explain' id='explainid'>
+            <Col xs="12" md="4" className='third'>
               <h5 className='titleColor'>Browse</h5>
               Browse off the beaten path travel recommendations all over the world
-            </div>
-            <div className='third'>
+            </Col>
+            <Col xs="12" md="4" className='third'>
               <h5 className='titleColor'>Search</h5>
               Search for unique recommendations in the city or country you want
-            </div>
-            <div className='third'>
+            </Col>
+            <Col xs="12" md="4" className='third'>
               <h5 className='titleColor'>Recommend</h5>
               Add your own recommendation - sign up (for free) to do so
-            </div>
-          </div>
+            </Col>
+          </Row>
+          </Container>
           <Container id='browse'>
             <TodoList />
           </Container>
